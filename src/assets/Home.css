@@ -1,0 +1,34 @@
+/* Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #151515;
+    color: white;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+}
+
+.social-links {
+    margin: 20px;
+    font-size: 30px;
+
+    a {
+        color: #009DCF;
+        margin: 0 10px;
+      }
+
+    a:hover {
+     color: #00BFFF;
+    }
+}
+
+hr {
+    width: 20%;
+    color: #009DCF;
+  }
