@@ -2,33 +2,36 @@
     {
         "id": 1,
         "title": "Booki",
-        "objectives": "Objectifs du projet 1",
-        "skills": "Compétences utilisées pour le projet 1",
-        "github": "lien-vers-github1",
+        "objectives": "Pour ce projet nous avons intégré l'interface responsive du site web d'une agence de voyage. Nous avions accès aux maquettes Figma pour mobile, tablette et desktop, ainsi qu'à toutes les images nécessaires. Notre objectif principal était de créer nos propres composants d'interface en HTML et CSS pour obtenir un rendu fidèle aux maquettes. L'idée était de permettre aux utilisateurs de trouver facilement des hébergements et des activités dans la ville de leur choix. Nous avons veillé à ce que la page d'accueil fonctionne parfaitement sur tous les appareils et tailles d'écran grâce à un design responsive.",
+        "skills": "HTML | CSS",
+        "github": "https://github.com/Hiimuroo/P3_Booki",
+        "website": "https://booki-matthieu-labille.netlify.app/",
         "image": "https://i.ibb.co/y4VX0fq/Booki.png"
     },
     {
         "id": 2,
         "title": "OhMyFood",
-        "objectives": "Objectifs du projet 2",
-        "skills": "Compétences utilisées pour le projet 2",
-        "github": "lien-vers-github2",
+        "objectives": "Sur ce projet, j'ai été chargé de travailler sur l'interface mobile-first d'une start-up. Nous avons utilisé Sass pour améliorer nos styles CSS et intégré des animations CSS pour rendre l'expérience utilisateur plus interactive. J'ai eu accès aux maquettes pour mobile et desktop, ainsi qu'au prototype sur Figma, ce qui m'a permis de comprendre l'importance de la conception adaptative des sites web. L'utilisation de Sass nous a également aidés à écrire des styles plus organisés et maintenables. Enfin, nous avons versionné notre projet avec Git et GitHub, ce qui nous a permis de gérer et de collaborer efficacement sur le développement du site.",
+        "skills": "HTML | SASS",
+        "github": "https://github.com/Hiimuroo/P4_OhMyFood",
+        "website": "https://ohmyfood-matthieu-labille.netlify.app/",
         "image": "https://i.imgur.com/YUExhz3.png"
     },
     {
         "id": 3,
         "title": "Sophie Bluel",
-        "objectives": "Objectifs du projet 3",
-        "skills": "Compétences utilisées pour le projet 3",
-        "github": "lien-vers-github3",
+        "objectives": "Dans ce projet, j'ai été chargé de créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant principalement JavaScript et en communiquant avec une API. Mon travail était axé sur la partie Front-End du site, où j'ai développé la page de présentation des travaux de l'architecte à partir du HTML fourni, en gérant les événements utilisateurs et en manipulant les éléments du DOM avec JavaScript. J'ai également créé une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias, le tout développé from scratch pour mettre en pratique mes compétences en JavaScript de manière approfondie. Pour la première fois, j'ai eu accès à un code back-end pour tester les fonctionnalités, apprenant ainsi à communiquer avec une API, une compétence cruciale pour les applications web modernes. J'ai utilisé Figma pour accéder aux maquettes, Visual Studio Code pour le développement, et GitHub pour la gestion de version de mon projet.",
+        "skills": "HTML | CSS | JAVASCRIPT",
+        "github": "https://github.com/Hiimuroo/P6_SophieBluel",
         "image": "https://i.imgur.com/NkvhqHV.png"
     },
     {
         "id": 4,
         "title": "Kasa",
-        "objectives": "Objectifs du projet 4",
-        "skills": "Compétences utilisées pour le projet 4",
-        "github": "lien-vers-github4",
+        "objectives": "Dans ce projet, j'ai dû implémenter le front-end d'une application en utilisant React et React Router pour offrir une expérience utilisateur moderne et réactive. Mon travail a consisté à développer la logique de présentation des données et les composants React, en utilisant cette bibliothèque JavaScript populaire pour créer des interfaces utilisateur dynamiques. J'ai utilisé React Router pour configurer la navigation entre les différentes pages de l'application, ce qui m'a permis de comprendre comment gérer efficacement le routage dans une application web moderne. Le projet s'est concentré exclusivement sur le développement front-end, en se basant sur des maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON. J'ai démarré le projet avec Create React App, un outil pratique qui simplifie la configuration initiale d'une application React, et j'ai également utilisé Node.js pour exécuter du code JavaScript en dehors du navigateur.",
+        "skills": "REACT JS | SCSS",
+        "github": "https://github.com/Hiimuroo/P8_Kasa",
+        "website": "https://master--kasa-matthieu-lab.netlify.app/",
         "image": "https://i.imgur.com/0FCgZIQ.png"
     },
     {
@@ -36,7 +39,7 @@
         "title": "Nina Carducci",
         "objectives": "Objectifs du projet 5",
         "skills": "Compétences utilisées pour le projet 5",
-        "github": "lien-vers-github5",
+        "github": "https://github.com/Hiimuroo/P9_NinaCarducci",
         "image": "https://i.imgur.com/BeCzlgc.png"
     },
     {
@@ -44,7 +47,7 @@
         "title": "724 events",
         "objectives": "Objectifs du projet 6",
         "skills": "Compétences utilisées pour le projet 6",
-        "github": "lien-vers-github6",
+        "github": "https://github.com/Hiimuroo/P10_724Events",
         "image": "https://i.imgur.com/vqNRBFd.png"
     },
     {
@@ -52,7 +55,7 @@
         "title": "ArgentBank",
         "objectives": "Objectifs du projet 7",
         "skills": "Compétences utilisées pour le projet 7",
-        "github": "lien-vers-github7",
+        "github": "https://github.com/Hiimuroo/P11_ArgentBank",
         "image": "https://i.imgur.com/bUxY5dX.png"
     }
 ]

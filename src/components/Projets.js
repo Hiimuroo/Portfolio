@@ -28,7 +28,7 @@ const Projets = () => {
     };
   }, []);
 
-  return (
+return (
     <div className="projets sections">
       <h2>Mes Projets</h2>
       <hr />
@@ -44,15 +44,24 @@ const Projets = () => {
         <div className="modal" ref={modalRef}>
           <div className="modal-content">
             <span className="close" onClick={closeModal}>×</span>
-            <h2>{selectedProject.title}</h2>
-            <p><strong>Objectifs:</strong> {selectedProject.objectives}</p>
-            <p><strong>Compétences utilisées:</strong> {selectedProject.skills}</p>
-            <p><strong>Lien GitHub:</strong> <a href={selectedProject.github}>{selectedProject.github}</a></p>
+            <h1>{selectedProject.title}</h1>
+            <h3>Objectifs</h3>
+            <p>{selectedProject.objectives}</p>
+            <h3>Compétences utilisées</h3>
+            <p>{selectedProject.skills}</p>
+            <h3>Lien GitHub</h3>
+            <p><a href={selectedProject.github} target="_blank" rel="noopener noreferrer">{selectedProject.github}</a></p>
+            {selectedProject.website && (
+              <>
+                <h3>Lien du site</h3>
+                <p><a href={selectedProject.website} target="_blank" rel="noopener noreferrer">{selectedProject.website}</a></p>
+              </>
+            )}
           </div>
         </div>
       )}
     </div>
   );
-};
-
+}
+  
 export default Projets;
