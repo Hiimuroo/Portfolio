@@ -1,6 +1,10 @@
 /* projets.css */
 .projets {
     height: auto;
+
+    hr {
+        margin-bottom: 40px;
+      }
 }
 
 .project-list {
@@ -47,7 +51,7 @@
   }
   
   .modal-content {
-    width: auto;
+    width: 800px;
     height: auto;
   }
   

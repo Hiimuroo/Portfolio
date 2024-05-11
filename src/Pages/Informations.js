@@ -5,6 +5,7 @@ const Informations = () => {
   return (
     <div className="informations sections">
       <h2>Informations Personnelles</h2>
+      <hr />
       <div>
         <h3>Diplômes</h3>
         <ul>

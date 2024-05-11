@@ -4,6 +4,10 @@
   padding: 20px;
 }
 
+.Contact hr {
+  margin-bottom: 40px;
+}
+
 input[type='text'],
 input[type='email'],
 textarea {

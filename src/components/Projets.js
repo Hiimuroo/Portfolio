@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import projetsData from '../Data/Projets.json';
 import '../assets/style/Projets.css';
 
 const Projets = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const modalRef = useRef(null);
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -13,9 +14,24 @@ const Projets = () => {
     setSelectedProject(null);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="projets sections">
       <h2>Mes Projets</h2>
+      <hr />
       <div className="project-list">
         {projetsData.map((project, index) => (
           <div className="project-item" key={index} onClick={() => openModal(project)}>
@@ -25,7 +41,7 @@ const Projets = () => {
         ))}
       </div>
       {selectedProject && (
-        <div className="modal">
+        <div className="modal" ref={modalRef}>
           <div className="modal-content">
             <span className="close" onClick={closeModal}>×</span>
             <h2>{selectedProject.title}</h2>
