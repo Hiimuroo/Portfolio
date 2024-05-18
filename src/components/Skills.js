@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faSass, faJs, faReact, faNodeJs, faGithub, faBootstrap, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import {  faDatabase, faBarsProgress } from '@fortawesome/free-solid-svg-icons';
+import {  faDatabase } from '@fortawesome/free-solid-svg-icons';
+import reduxLogo from '../assets/images/redux.svg';
+import JestLogo from '../assets/images/jest.png';
+import MongoLogo from '../assets/images/Mongo.png';
 import '../assets/style/Skills.css';
 
 const Skills = () => {
@@ -65,11 +68,11 @@ const Skills = () => {
             <div className="icons">
             <FontAwesomeIcon icon={faNodeJs} className="skill-icon" />
               <span>Node.js</span>
-              <FontAwesomeIcon icon={faDatabase} className="skill-icon" />
+              <img src={MongoLogo} alt="MongoDB" className="skill-icon" />
               <span>MongoDB</span>
-              <FontAwesomeIcon icon={faBarsProgress} className="skill-icon" />
+              <img src={JestLogo} alt="Jest" className="skill-icon" />
               <span>Jest</span>
-              <FontAwesomeIcon icon={faReact} className="skill-icon" />
+              <img src={reduxLogo} alt="Redux" className="skill-icon" />
               <span>Redux</span>
             </div>
           </div>
