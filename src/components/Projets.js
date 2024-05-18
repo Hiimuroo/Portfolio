@@ -1,10 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
 import projetsData from '../Data/Projets.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../assets/style/Projets.css';
 
 const Projets = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const modalRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoaded(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -30,9 +42,9 @@ const Projets = () => {
 
 return (
     <div className="projets sections">
-      <h2>Mes Projets</h2>
+      <h1>Mes Projets</h1>
       <hr />
-      <div className="project-list">
+      <div className={`project-list ${loaded ? "loaded" : ""}`}>
         {projetsData.map((project, index) => (
           <div className="project-item" key={index} onClick={() => openModal(project)}>
             <img src={project.image} alt={project.title} />
@@ -50,7 +62,10 @@ return (
             <h3>Compétences utilisées</h3>
             <p>{selectedProject.skills}</p>
             <h3>Lien GitHub</h3>
-            <p><a href={selectedProject.github} target="_blank" rel="noopener noreferrer">{selectedProject.github}</a></p>
+            <p><a href={selectedProject.github} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+            </p>
             {selectedProject.website && (
               <>
                 <h3>Lien du site</h3>

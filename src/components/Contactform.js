@@ -19,6 +19,10 @@ const ContactForm = () => {
   };
 
   return (
+    <div className='Contact sections'>
+    <h1>Contactez-moi</h1>
+    <hr />
+    <p>En tant qu'intégrateur/développeur web passionné et expérimenté, je suis prêt à relever de nouveaux défis et à mettre mes compétences à votre service pour la conception ou la refonte de votre site web.</p>
     <form className="Contact" onSubmit={handleSubmit}>
       <input
         type="text"
@@ -46,6 +50,7 @@ const ContactForm = () => {
       ></textarea>
       <button type="submit" className="submit-button">Envoyer</button>
     </form>
+    </div>
   );
 };
 
