@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faSass, faJs, faReact, faNodeJs, faGithub, faBootstrap, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import {  faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3Alt, faSass, faJs, faReact, faNodeJs, faGithub, faBootstrap, faGoogle, faTrello } from '@fortawesome/free-brands-svg-icons';
 import reduxLogo from '../assets/images/redux.svg';
 import JestLogo from '../assets/images/jest.png';
 import MongoLogo from '../assets/images/Mongo.png';
@@ -83,6 +82,8 @@ const Skills = () => {
               <span>GitHub</span>
               <FontAwesomeIcon icon={faGoogle} className="skill-icon" />
               <span>Lighthouse</span>
+              <FontAwesomeIcon icon={faTrello} className="skill-icon" />
+              <span>Trello</span>
             </div>
           </div>
         </div>

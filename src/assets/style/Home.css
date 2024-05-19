@@ -32,3 +32,21 @@
 hr {
     width: 30%;
   }
+
+  .discord-pseudo {
+    animation: slide-in 0.5s forwards;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
