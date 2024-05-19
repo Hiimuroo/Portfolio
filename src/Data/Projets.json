@@ -31,7 +31,7 @@
         "objectives": "Dans ce projet, j'ai dû implémenter le front-end d'une application en utilisant React et React Router pour offrir une expérience utilisateur moderne et réactive. Mon travail a consisté à développer la logique de présentation des données et les composants React, en utilisant cette bibliothèque JavaScript populaire pour créer des interfaces utilisateur dynamiques. J'ai utilisé React Router pour configurer la navigation entre les différentes pages de l'application, ce qui m'a permis de comprendre comment gérer efficacement le routage dans une application web moderne. Le projet s'est concentré exclusivement sur le développement front-end, en se basant sur des maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON. J'ai démarré le projet avec Create React App, un outil pratique qui simplifie la configuration initiale d'une application React, et j'ai également utilisé Node.js pour exécuter du code JavaScript en dehors du navigateur.",
         "skills": "REACT JS | SCSS",
         "github": "https://github.com/Hiimuroo/P8_Kasa",
-        "website": "https://master--kasa-matthieu-lab.netlify.app/",
+        "website": "https://matthieu-labille-kasa.netlify.app/",
         "image": "https://i.imgur.com/0FCgZIQ.png"
     },
     {
