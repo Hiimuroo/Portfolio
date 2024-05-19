@@ -18,7 +18,7 @@ const Home = () => {
         <a href="https://github.com/Hiimuroo"><FontAwesomeIcon icon={faTwitter} /></a>
         <a href="https://github.com/Hiimuroo"><FontAwesomeIcon icon={faFacebook} /></a>
         <a href="https://github.com/Hiimuroo"><FontAwesomeIcon icon={faInstagram} /></a>
-        <a href="#" onClick={() => setShowPseudo(!showPseudo)}><FontAwesomeIcon icon={faDiscord} /></a>
+        <a href="javascript:void(0)" onClick={() => setShowPseudo(!showPseudo)}><FontAwesomeIcon icon={faDiscord} /></a>
         {showPseudo && (
           <span className="discord-pseudo">himuroo</span>
         )}
