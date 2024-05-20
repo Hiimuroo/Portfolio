@@ -6,6 +6,7 @@
   width: 250px;
   height: 100%;
   background-color: #222222;
+  transition: width 0.3s;
 }
 
 ul {
@@ -24,10 +25,18 @@ li {
 }
 
 .navbar a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 10px;
   text-decoration: none;
   color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: opacity 0.3s;
+}
+
+.navbar a span {
+  margin-left: 10px;
 }
 
 a:hover {
@@ -43,10 +52,13 @@ a:hover {
 }
 
 .Footer {
-  position: fixed;
-  margin-left: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
   color: #FFF;
-  bottom: 0;
+  font-size: 12px; 
 }
 
 .logo-container {
@@ -57,4 +69,42 @@ a:hover {
 .logo {
   width: 200px;
   height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    width: 70px;
+  }
+
+  .navbar hr {
+    width: 40%;
+  }
+
+  .navbar a span {
+    display: none;
+  }
+
+  .navbar svg {
+    margin: 30px 30px;
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .logo-container {
+    object-fit:fill;
+    margin-bottom: 50px;
+  }
+
+  ul {
+    font-size: 13px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
 }

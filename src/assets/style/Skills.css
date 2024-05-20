@@ -1,7 +1,20 @@
-.skills-container {
+/* Skills.css */
+
+.Skills {
   color: #FFF;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  text-align: center;
+}
+
+.Skills h1 {
+  font-size: 2.5rem;
+}
+
+.skills-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s, transform 0.6s;
 }
 
 .skills-container.loaded {
@@ -11,14 +24,15 @@
 
 .skills-columns {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .column {
   flex: 1;
   padding: 20px;
-  margin: 0;
-  width: 400px;
+  margin: 10px;
+  min-width: 300px;
   text-align: center;
   opacity: 0;
   transition: opacity 0.2s ease-in-out; 
@@ -40,8 +54,8 @@
 }
 
 .column h3 {
-  font-size: 27px;
-  margin-bottom: 40px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 .icons {
@@ -51,11 +65,51 @@
 }
 
 .icons span {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 1rem;
+  margin-bottom: 15px;
 }
 
 .skill-icon {
-  font-size: 50px;
+  font-size: 3rem;
   color: #009DCF;
+}
+
+@media (max-width: 1024px) {
+  .skills-columns {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Skills h1 {
+    font-size: 32px;
+  }
+
+  .column {
+    margin: 5px 0;
+  }
+
+  .icons span {
+    font-size: 14px;
+  }
+
+  .skill-icon {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Skills h1 {
+    font-size: 24px;
+  }
+
+  .icons span {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .skill-icon {
+    font-size: 40px;
+  }
 }

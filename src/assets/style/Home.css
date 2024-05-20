@@ -1,60 +1,101 @@
 /* Home.css */
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #151515;
-    color: white;
-    margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #151515;
+  color: white;
+  margin-left: 250px;
+  text-align: center;
+  opacity: 0;
+  animation: fade-in 1s forwards 0.3s;
+}
 
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-      }
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.home h1,
+.home h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slide-up 0.3s forwards;
+}
+
+.home h1 {
+  animation-delay: 0.6s;
+}
+
+.home h2 {
+  animation-delay: 0.8s;
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .social-links {
-    margin: 20px;
-    font-size: 30px;
+  margin: 20px;
+  font-size: 30px;
+  opacity: 0;
+  animation: fade-in 0.5s forwards 1s;
+}
 
-    a {
-        color: #009DCF;
-        margin: 0 10px;
-      }
+.social-links a {
+  color: #009DCF;
+  margin: 0 10px;
+}
 
-      button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer; 
-        font-size: 30px;
-        color: #009DCF;
-      }
+.social-links button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer; 
+  font-size: 30px;
+  color: #009DCF;
+}
 
-    a:hover {
-     color: #00BFFF;
-    }
+.social-links a:hover,
+.social-links button:hover {
+  color: #00BFFF;
 }
 
 hr {
-    width: 30%;
-  }
+  width: 20%;
+  opacity: 0;
+  animation: fade-in 0.5s forwards 1.2s;
+}
 
-  .discord-pseudo {
-    animation: slide-in 0.5s forwards;
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 24px;
+.discord-pseudo {
+  animation: slide-in 0.5s forwards;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
   }
-  
-  @keyframes slide-in {
-    0% {
-      transform: translateX(-50%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home {
+    margin-left: 70px;
+  }
+  .home h2 {
+    font-size: 21px;
+  }
+}

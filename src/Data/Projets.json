@@ -40,6 +40,7 @@
         "objectives": "Dans ce projet, mon rôle était de travailler en tant que développeur freelance pour optimiser le référencement d'un site web. J'ai commencé par identifier les problèmes de chargement et de référencement qui affectaient le site. Ensuite, j'ai proposé des recommandations pour améliorer la vitesse de chargement, la structure du code et le référencement. J'ai travaillé sur la mise en œuvre de ces améliorations en modifiant le code du site. Mon objectif principal était d'améliorer les performances et l'accessibilité du site pour un meilleur référencement sur les moteurs de recherche. J'ai utilisé des outils tels que Lighthouse et Wave pour mesurer les résultats et apporter des ajustements si nécessaire. Enfin, j'ai créé un rapport détaillé illustrant les résultats avant et après les modifications. Ce rapport comprenait des captures d'écran des audits, ainsi que des explications sur les changements apportés et leur impact sur le référencement et l'accessibilité du site.",
         "skills": "Google Lighthouse | WAVE | HTML | CSS | JAVASCRIPT",
         "github": "https://github.com/Hiimuroo/P9_NinaCarducci",
+        "website": "https://master--fantastic-gecko-049e87.netlify.app/",
         "image": "https://i.imgur.com/BeCzlgc.png"
         },
     {
@@ -48,13 +49,14 @@
         "objectives": "Durant ce projet, j'ai débuggé et finalisé le développement d'un site one-page. J'ai commencé par examiner le code existant en utilisant les Chrome DevTools pour identifier et comprendre les problèmes et bugs signalés. Ensuite, j'ai résolu ces problèmes en utilisant mes compétences en JavaScript et des outils spécifiques à React tels que React Developer Tools. J'ai également complété le cahier de recette en détaillant tous les scénarios de test nécessaires pour vérifier le bon fonctionnement du site, incluant des tests unitaires et fonctionnels. Pour la gestion du projet, j'ai utilisé Yarn comme gestionnaire de packages et Node.js pour exécuter du code JavaScript côté serveur. Ces outils m'ont aidé à gérer les dépendances et à exécuter des tests localement. Enfin, j'ai versionné mon travail avec GitHub et utilisé Visual Studio Code comme éditeur de code pour développer et débugger le site.",
         "skills": "NODE JS | GITHUB | REACT JS",
         "github": "https://github.com/Hiimuroo/P10_724Events",
+        "website": "https://724-events-matthieu-labille.netlify.app/",
         "image": "https://i.imgur.com/vqNRBFd.png"
     },
     {
         "id": 7,
         "title": "ArgentBank",
         "objectives": "Dans ce projet, j'ai travaillé sur le développement front-end d'une application bancaire en utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive. Ma mission principale était d'intégrer le front-end avec le back-end via des appels API. J'ai écrit des appels à l'API REST pour connecter les deux parties de l'application, assurant une communication fluide entre le client et le serveur. J'ai utilisé React pour développer l'interface utilisateur de l'application bancaire, en me concentrant sur la création d'un tableau de bord complet et responsive pour les utilisateurs. Redux a été utilisé pour gérer les données de l'application. Cela m'a permis de maintenir un état global cohérent à travers l'application. Pour définir les points d'accès de l'API et modéliser les interactions avec les données des transactions, j'ai utilisé Swagger. Cet outil m'a aidé à décrire les différentes routes et actions nécessaires pour l'API. J'ai également utilisé Node.js pour exécuter le code JavaScript côté serveur. Cela m'a donné une expérience pratique de la gestion d'une application full-stack.",
-        "skills": "Compétences utilisées pour le projet 7",
+        "skills": "REACT JS | REDUX | MONGODB | SWAGGER",
         "github": "https://github.com/Hiimuroo/P11_ArgentBank",
         "image": "https://i.imgur.com/bUxY5dX.png"
     }

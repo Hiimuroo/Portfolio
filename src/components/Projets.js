@@ -1,3 +1,4 @@
+// Projets.js
 import React, { useState, useEffect, useRef } from 'react';
 import projetsData from '../Data/Projets.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,7 +9,6 @@ const Projets = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const modalRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
-
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -40,11 +40,11 @@ const Projets = () => {
     };
   }, []);
 
-return (
-    <div className="projets sections">
+  return (
+    <div className="projets">
       <h1>Mes Projets</h1>
       <hr />
-      <div className={`project-list ${loaded ? "loaded" : ""}`}>
+      <div className={`project-list ${loaded ? 'loaded' : ''}`}>
         {projetsData.map((project, index) => (
           <div className="project-item" key={index} onClick={() => openModal(project)}>
             <img src={project.image} alt={project.title} />
@@ -62,14 +62,19 @@ return (
             <h3>Compétences utilisées</h3>
             <p>{selectedProject.skills}</p>
             <h3>Lien GitHub</h3>
-            <p><a href={selectedProject.github} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
+            <p>
+              <a href={selectedProject.github} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
             </p>
             {selectedProject.website && (
               <>
                 <h3>Lien du site</h3>
-                <p><a href={selectedProject.website} target="_blank" rel="noopener noreferrer">{selectedProject.website}</a></p>
+                <p>
+                  <a href={selectedProject.website} target="_blank" rel="noopener noreferrer">
+                    {selectedProject.website}
+                  </a>
+                </p>
               </>
             )}
           </div>
@@ -78,5 +83,5 @@ return (
     </div>
   );
 }
-  
+
 export default Projets;

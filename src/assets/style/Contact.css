@@ -1,24 +1,51 @@
 /* Contact.css */
 
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #FFF;
+}
+
+.Contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
 .Contact p {
   max-width: 800px;
   text-align: center;
   margin-bottom: 50px;
+  font-size: 1.2rem;
 }
 
 .Contact hr {
-  margin-bottom: 100px;
+  width: 50%;
+  margin-bottom: 50px;
+  border: 0;
+  border-top: 2px solid #009DCF;
 }
 
 input[type='text'],
 input[type='email'],
 textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 30px;
-  border: 2px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #009DCF;
   border-radius: 10px;
   font-size: 16px;
+  background-color: #222;
+  color: #FFF;
+  transition: border-color 0.1s ease;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  border-color: #0077B6;
+  outline: none;
 }
 
 textarea {
@@ -28,13 +55,21 @@ textarea {
 .submit-button {
   background-color: #009DCF;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .submit-button:hover {
   background-color: #0077B6;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .Contact {
+    width: 90%;
+  }
 }

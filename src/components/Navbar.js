@@ -13,19 +13,29 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className="logo" />
       </div>
       <ul>
-        <li className={currentPath === '/home' ? 'active' : ''}><a href="/home"><FontAwesomeIcon icon={faHouse} /> Home</a></li>
+        <li className={currentPath === '/home' ? 'active' : ''}>
+          <a href="/home"><FontAwesomeIcon icon={faHouse} /><span>Home</span></a>
+        </li>
         <hr />
-        <li className={currentPath === '/informations' ? 'active' : ''}><a href="/informations"><FontAwesomeIcon icon={faCircleInfo} /> Informations</a></li>
+        <li className={currentPath === '/informations' ? 'active' : ''}>
+          <a href="/informations"><FontAwesomeIcon icon={faCircleInfo} /><span>Informations</span></a>
+        </li>
         <hr />
-        <li className={currentPath === '/projets' ? 'active' : ''}><a href="/projets"><FontAwesomeIcon icon={faCode} /> Mes projets</a></li>
+        <li className={currentPath === '/projets' ? 'active' : ''}>
+          <a href="/projets"><FontAwesomeIcon icon={faCode} /><span>Mes projets</span></a>
+        </li>
         <hr />
-        <li className={currentPath === '/competences' ? 'active' : ''}><a href="/competences"><FontAwesomeIcon icon={faListCheck} /> Mes compétences</a></li>
+        <li className={currentPath === '/competences' ? 'active' : ''}>
+          <a href="/competences"><FontAwesomeIcon icon={faListCheck} /><span>Mes compétences</span></a>
+        </li>
         <hr />
-        <li className={currentPath === '/contact' ? 'active' : ''}><a href="/contact"><FontAwesomeIcon icon={faEnvelope} /> Me contacter</a></li>
+        <li className={currentPath === '/contact' ? 'active' : ''}>
+          <a href="/contact"><FontAwesomeIcon icon={faEnvelope} /><span>Me contacter</span></a>
+        </li>
         <hr />
       </ul>
       <div className="Footer">
-      <h5>Copyright © {new Date().getFullYear()} Matthieu Labille</h5>
+        <h5>Copyright © {new Date().getFullYear()} Matthieu Labille</h5>
       </div>
     </div>
   );

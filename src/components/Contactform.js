@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../assets/style/Contact.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,37 +20,38 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='Contact sections'>
-    <h1>Contactez-moi</h1>
-    <hr />
-    <p>En tant qu'intégrateur/développeur web passionné et expérimenté, je suis prêt à relever de nouveaux défis et à mettre mes compétences à votre service pour la conception ou la refonte de votre site web.</p>
-    <form className="Contact" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="name"
-        placeholder="Votre nom"
-        value={formData.name}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Votre email"
-        value={formData.email}
-        onChange={handleChange}
-        required
-      />
-      <textarea
-        type="text"
-        name="message"
-        placeholder="Votre message"
-        value={formData.message}
-        onChange={handleChange}
-        required
-      ></textarea>
-      <button type="submit" className="submit-button">Envoyer</button>
-    </form>
+    <div className="Contact">
+      <h1>Contactez-moi</h1>
+      <hr />
+      <p>
+        En tant qu'intégrateur/développeur web passionné et expérimenté, je suis prêt à relever de nouveaux défis et à mettre mes compétences à votre service pour la conception ou la refonte de votre site web.
+      </p>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Votre nom"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Votre email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Votre message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        ></textarea>
+        <button type="submit" className="submit-button">Envoyer</button>
+      </form>
     </div>
   );
 };

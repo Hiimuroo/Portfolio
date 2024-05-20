@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faSass, faJs, faReact, faNodeJs, faGithub, faBootstrap, faGoogle, faTrello } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faSass, faJs, faReact, faNodeJs, faGithub, faBootstrap, faGoogle, faTrello, faPython } from '@fortawesome/free-brands-svg-icons';
 import reduxLogo from '../assets/images/redux.svg';
 import JestLogo from '../assets/images/jest.png';
 import MongoLogo from '../assets/images/Mongo.png';
@@ -40,7 +40,7 @@ const Skills = () => {
   }, [loaded]);
 
   return (
-    <div className='sections'>
+    <div className='Skills'>
       <h1>Mes Compétences</h1>
       <hr />
       <div className={`skills-container ${loaded ? 'loaded' : ''}`}>
@@ -73,6 +73,8 @@ const Skills = () => {
               <span>Jest</span>
               <img src={reduxLogo} alt="Redux" className="skill-icon" />
               <span>Redux</span>
+              <FontAwesomeIcon icon={faPython} className="skill-icon" />
+              <span>Python</span>
             </div>
           </div>
           <div className={`column ${showColumn3 ? 'show' : ''}`}>

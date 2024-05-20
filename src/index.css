@@ -8,6 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #151515;
+  }
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .sections {
@@ -18,5 +23,11 @@ body {
   height: auto;
   background-color: #151515;
   color: white;
-  margin-left: 100px;
+  margin-left: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .sections {
+    margin-left: 80px; /* Adjust for reduced navbar width */  
+} 
 }

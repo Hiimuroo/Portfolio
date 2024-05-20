@@ -1,0 +1,29 @@
+{
+    "introduction": "Je m'appelle Matthieu Labille, né le 15 novembre 1996. J'ai suivi la formation d'intégrateur/développeur web chez Openclassroom. Passionné depuis mon plus jeune âge par les nouvelles technologies, j'ai acquis de solides connaissances en maintenance des ordinateurs, en assemblage de PC, en résolution de problèmes matériels et logiciels, et en optimisation des systèmes.",
+    "diplomas": [
+      "Bac technologique STI 2D (Sciences et Technologies de l'Industrie et du Développement Durable",
+      "1 an en BTS SNIR (Système numérique et informatique réseaux)"
+    ],
+    "career": [
+      "Formation intégrateur/développeur web chez Openclassroom",
+      "Métiers régulier dans la section e-commerce dans l'alimentaire"
+    ],
+    "passions": [
+      {
+        "title": "Maintenance des ordinateurs"
+      },
+      {
+        "title": "Manga/animation"
+      },
+      {
+        "title": "Pop culture"
+      },
+      {
+        "title": "Musculation"
+      },
+      {
+        "title": "Musique"
+      }
+    ],
+    "photo": "https://avatars.githubusercontent.com/u/132696324?s=400&u=2d3be0cadf98ae9b63e9178381e519cd9d663f88&v=4"
+  }
