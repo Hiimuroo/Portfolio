@@ -4,8 +4,8 @@ Bienvenue sur le portfolio de Matthieu Labille, Intégrateur/Développeur Web. C
 
 ## Aperçu
 
-![Aperçu du Portfolio](assets/images/port1.png)
-![Aperçu du Portfolio](assets/images/port2.png)
+![Aperçu du Portfolio](src/assets/images/port1.png)
+![Aperçu du Portfolio](src/assets/images/port2.png)
 
 ## Fonctionnalités
 
