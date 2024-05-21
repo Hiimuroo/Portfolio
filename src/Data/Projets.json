@@ -19,6 +19,14 @@
     },
     {
         "id": 3,
+        "title": "Print It !",
+        "objectives": "Projet 5 OpenClassRoom",
+        "skills": "HTML | CSS | JAVASCRIPT",
+        "github": "https://github.com/Hiimuroo/P6_SophieBluel",
+        "image": "https://i.imgur.com/focc2MK.jpeg"
+    },
+    {
+        "id": 4,
         "title": "Sophie Bluel",
         "objectives": "Dans ce projet, j'ai été chargé de créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant principalement JavaScript et en communiquant avec une API. Mon travail était axé sur la partie Front-End du site, où j'ai développé la page de présentation des travaux de l'architecte à partir du HTML fourni, en gérant les événements utilisateurs et en manipulant les éléments du DOM avec JavaScript. J'ai également créé une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias, le tout développé from scratch pour mettre en pratique mes compétences en JavaScript de manière approfondie. Pour la première fois, j'ai eu accès à un code back-end pour tester les fonctionnalités, apprenant ainsi à communiquer avec une API, une compétence cruciale pour les applications web modernes. J'ai utilisé Figma pour accéder aux maquettes, Visual Studio Code pour le développement, et GitHub pour la gestion de version de mon projet.",
         "skills": "HTML | CSS | JAVASCRIPT",
@@ -26,7 +34,7 @@
         "image": "https://i.imgur.com/NkvhqHV.png"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Kasa",
         "objectives": "Dans ce projet, j'ai dû implémenter le front-end d'une application en utilisant React et React Router pour offrir une expérience utilisateur moderne et réactive. Mon travail a consisté à développer la logique de présentation des données et les composants React, en utilisant cette bibliothèque JavaScript populaire pour créer des interfaces utilisateur dynamiques. J'ai utilisé React Router pour configurer la navigation entre les différentes pages de l'application, ce qui m'a permis de comprendre comment gérer efficacement le routage dans une application web moderne. Le projet s'est concentré exclusivement sur le développement front-end, en se basant sur des maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON. J'ai démarré le projet avec Create React App, un outil pratique qui simplifie la configuration initiale d'une application React, et j'ai également utilisé Node.js pour exécuter du code JavaScript en dehors du navigateur.",
         "skills": "REACT JS | SCSS",
@@ -35,7 +43,7 @@
         "image": "https://i.imgur.com/0FCgZIQ.png"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Nina Carducci",
         "objectives": "Dans ce projet, mon rôle était de travailler en tant que développeur freelance pour optimiser le référencement d'un site web. J'ai commencé par identifier les problèmes de chargement et de référencement qui affectaient le site. Ensuite, j'ai proposé des recommandations pour améliorer la vitesse de chargement, la structure du code et le référencement. J'ai travaillé sur la mise en œuvre de ces améliorations en modifiant le code du site. Mon objectif principal était d'améliorer les performances et l'accessibilité du site pour un meilleur référencement sur les moteurs de recherche. J'ai utilisé des outils tels que Lighthouse et Wave pour mesurer les résultats et apporter des ajustements si nécessaire. Enfin, j'ai créé un rapport détaillé illustrant les résultats avant et après les modifications. Ce rapport comprenait des captures d'écran des audits, ainsi que des explications sur les changements apportés et leur impact sur le référencement et l'accessibilité du site.",
         "skills": "Google Lighthouse | WAVE | HTML | CSS | JAVASCRIPT",
@@ -44,7 +52,7 @@
         "image": "https://i.imgur.com/BeCzlgc.png"
         },
     {
-        "id": 6,
+        "id": 7,
         "title": "724 events",
         "objectives": "Durant ce projet, j'ai débuggé et finalisé le développement d'un site one-page. J'ai commencé par examiner le code existant en utilisant les Chrome DevTools pour identifier et comprendre les problèmes et bugs signalés. Ensuite, j'ai résolu ces problèmes en utilisant mes compétences en JavaScript et des outils spécifiques à React tels que React Developer Tools. J'ai également complété le cahier de recette en détaillant tous les scénarios de test nécessaires pour vérifier le bon fonctionnement du site, incluant des tests unitaires et fonctionnels. Pour la gestion du projet, j'ai utilisé Yarn comme gestionnaire de packages et Node.js pour exécuter du code JavaScript côté serveur. Ces outils m'ont aidé à gérer les dépendances et à exécuter des tests localement. Enfin, j'ai versionné mon travail avec GitHub et utilisé Visual Studio Code comme éditeur de code pour développer et débugger le site.",
         "skills": "NODE JS | GITHUB | REACT JS",
@@ -53,7 +61,7 @@
         "image": "https://i.imgur.com/vqNRBFd.png"
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "ArgentBank",
         "objectives": "Dans ce projet, j'ai travaillé sur le développement front-end d'une application bancaire en utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive. Ma mission principale était d'intégrer le front-end avec le back-end via des appels API. J'ai écrit des appels à l'API REST pour connecter les deux parties de l'application, assurant une communication fluide entre le client et le serveur. J'ai utilisé React pour développer l'interface utilisateur de l'application bancaire, en me concentrant sur la création d'un tableau de bord complet et responsive pour les utilisateurs. Redux a été utilisé pour gérer les données de l'application. Cela m'a permis de maintenir un état global cohérent à travers l'application. Pour définir les points d'accès de l'API et modéliser les interactions avec les données des transactions, j'ai utilisé Swagger. Cet outil m'a aidé à décrire les différentes routes et actions nécessaires pour l'API. J'ai également utilisé Node.js pour exécuter le code JavaScript côté serveur. Cela m'a donné une expérience pratique de la gestion d'une application full-stack.",
         "skills": "REACT JS | REDUX | MONGODB | SWAGGER",

@@ -104,7 +104,11 @@ a:hover {
     font-size: 13px;
   }
 
+  .navbar a {
+    padding: 0px;
+  }
+
   li {
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 }

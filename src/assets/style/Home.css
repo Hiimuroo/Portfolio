@@ -94,6 +94,7 @@ hr {
 @media (max-width: 768px) {
   .home {
     margin-left: 70px;
+    padding: 5px;
   }
   .home h2 {
     font-size: 21px;
