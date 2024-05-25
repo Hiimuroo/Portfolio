@@ -15,15 +15,30 @@ const Home = () => {
     <div className={`home ${loaded ? 'loaded' : ''}`}>
       <h1>Matthieu Labille</h1>
       <h2>Intégrateur/Developpeur Web</h2>
-      <hr />
+        <hr />
       <div className="social-links">
-        <a href="https://github.com/Hiimuroo" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a href="https://www.linkedin.com/in/matthieulabille/" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} />
-        </a>
-        <button onClick={() => setShowPseudo(!showPseudo)}>
+        
+      <a
+        href="https://github.com/Hiimuroo"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Lien vers le profil Github de Hiimuroo"
+        >
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/matthieulabille/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Lien vers le profil LinkedIn de Matthieu Labille"
+      >
+        <FontAwesomeIcon icon={faLinkedin} />
+      </a>
+
+        <button onClick={() => setShowPseudo(!showPseudo)}
+          aria-label="Afficher le pseudo Discord"
+          >
           <FontAwesomeIcon icon={faDiscord} />
         </button>
         {showPseudo && (

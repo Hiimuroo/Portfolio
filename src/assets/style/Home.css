@@ -68,8 +68,6 @@
 
 hr {
   width: 20%;
-  opacity: 0;
-  animation: fade-in 0.5s forwards 1.2s;
 }
 
 .discord-pseudo {

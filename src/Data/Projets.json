@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Booki",
-        "objectives": "Pour ce projet nous avons intégré l'interface responsive du site web d'une agence de voyage. Nous avions accès aux maquettes Figma pour mobile, tablette et desktop, ainsi qu'à toutes les images nécessaires. Notre objectif principal était de créer nos propres composants d'interface en HTML et CSS pour obtenir un rendu fidèle aux maquettes. L'idée était de permettre aux utilisateurs de trouver facilement des hébergements et des activités dans la ville de leur choix. Nous avons veillé à ce que la page d'accueil fonctionne parfaitement sur tous les appareils et tailles d'écran grâce à un design responsive.",
+        "objectives": "Pour ce projet j'ai intégré l'interface responsive du site web d'une agence de voyage. Ayant accès aux maquettes Figma pour mobile, tablette et desktop, ainsi qu'à toutes les images nécessaires. L'objectif principal était de créer nos propres composants d'interface en HTML et CSS pour obtenir un rendu fidèle aux maquettes. L'idée était de permettre aux utilisateurs de trouver facilement des hébergements et des activités dans la ville de leur choix. J'ai du coup veillé à ce que la page d'accueil fonctionne parfaitement sur tous les appareils et tailles d'écran grâce à un design responsive.",
         "skills": "HTML | CSS",
         "github": "https://github.com/Hiimuroo/P3_Booki",
         "website": "https://booki-matthieu-labille.netlify.app/",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "title": "OhMyFood",
-        "objectives": "Sur ce projet, j'ai été chargé de travailler sur l'interface mobile-first d'une start-up. Nous avons utilisé Sass pour améliorer nos styles CSS et intégré des animations CSS pour rendre l'expérience utilisateur plus interactive. J'ai eu accès aux maquettes pour mobile et desktop, ainsi qu'au prototype sur Figma, ce qui m'a permis de comprendre l'importance de la conception adaptative des sites web. L'utilisation de Sass nous a également aidés à écrire des styles plus organisés et maintenables. Enfin, nous avons versionné notre projet avec Git et GitHub, ce qui nous a permis de gérer et de collaborer efficacement sur le développement du site.",
+        "objectives": "Sur ce projet, j'ai été chargé de travailler sur l'interface mobile-first d'une start-up. J'ai donc utilisé Sass pour améliorer les styles CSS et intégré des animations CSS pour rendre l'expérience utilisateur plus interactive. J'ai eu accès aux maquettes pour mobile et desktop, ainsi qu'au prototype sur Figma, ce qui m'a permis de comprendre l'importance de la conception adaptative des sites web. L'utilisation de Sass m'a également aidés à écrire des styles plus organisés et maintenables. Enfin, j'ai versionné le projet avec Git et GitHub, ce qui m'a permis de gérer efficacement le développement du site.",
         "skills": "HTML | SASS",
         "github": "https://github.com/Hiimuroo/P4_OhMyFood",
         "website": "https://ohmyfood-matthieu-labille.netlify.app/",
@@ -20,15 +20,15 @@
     {
         "id": 3,
         "title": "Print It !",
-        "objectives": "Projet 5 OpenClassRoom",
+        "objectives": "Le but de ce projet était une initiation au Javascript, le but était de pouvoir utiliser le carrousel d'image sans passer par de l'Html. Il fallait donc faire défiler les images dans l'ordre et de façon infini.",
         "skills": "HTML | CSS | JAVASCRIPT",
-        "github": "https://github.com/Hiimuroo/P6_SophieBluel",
+        "github": "https://github.com/Hiimuroo/P5_PrintIt",
         "image": "https://i.imgur.com/focc2MK.jpeg"
     },
     {
         "id": 4,
         "title": "Sophie Bluel",
-        "objectives": "Dans ce projet, j'ai été chargé de créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant principalement JavaScript et en communiquant avec une API. Mon travail était axé sur la partie Front-End du site, où j'ai développé la page de présentation des travaux de l'architecte à partir du HTML fourni, en gérant les événements utilisateurs et en manipulant les éléments du DOM avec JavaScript. J'ai également créé une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias, le tout développé from scratch pour mettre en pratique mes compétences en JavaScript de manière approfondie. Pour la première fois, j'ai eu accès à un code back-end pour tester les fonctionnalités, apprenant ainsi à communiquer avec une API, une compétence cruciale pour les applications web modernes. J'ai utilisé Figma pour accéder aux maquettes, Visual Studio Code pour le développement, et GitHub pour la gestion de version de mon projet.",
+        "objectives": "Pour ce projet, je devais effectuer la tâche consistant à créer une page web dynamique pour le site web d’une architecte d’intérieur en utilisant principalement Javascript et en interagissant avec une API. Mon rôle concernait le Front-End du site. Mes responsabilités s’étendaient à la création de la page de présentation des travaux de l’architecte. En effet, je devais partir du contenu du fichier HTML fourni et gérer les événements de l’utilisateur. Cela inclut également la manipulations des éléments du Dom optimaux pour la modification du HTML avec Javascript. De plus, j’ai créé tout d’abord une page de connexion pour l’administrateur du site ainsi qu’une modale pour télécharger de nouveaux médias. J'ai eu accès à un code back-end pour tester les fonctionnalités, apprenant ainsi à communiquer avec une API, une compétence cruciale pour les applications web modernes. J'ai utilisé Figma pour accéder aux maquettes, Visual Studio Code pour le développement, et GitHub pour la gestion de version de mon projet.",
         "skills": "HTML | CSS | JAVASCRIPT",
         "github": "https://github.com/Hiimuroo/P6_SophieBluel",
         "image": "https://i.imgur.com/NkvhqHV.png"

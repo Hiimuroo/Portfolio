@@ -26,6 +26,7 @@ const ContactForm = () => {
       <p>
         En tant qu'intégrateur/développeur web passionné et expérimenté, je suis prêt à relever de nouveaux défis et à mettre mes compétences à votre service pour la conception ou la refonte de votre site web.
       </p>
+      <p>Horaire de contact tout les jours : 8h30 - 17h30</p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
