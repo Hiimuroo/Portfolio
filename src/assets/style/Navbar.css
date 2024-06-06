@@ -1,11 +1,23 @@
 /* Navbar.css */
+:root {
+  --background-color-dark: #222222;
+  --text-color-dark: white;
+  --hover-color-dark: #00BFFF;
+  --active-color-dark: #009DCF;
+
+  --background-color-light: #FFFFFF;
+  --text-color-light: #000000;
+  --hover-color-light: #0077FF;
+  --active-color-light: #0055CC;
+}
+
 .navbar {
   position: fixed;
   left: 0;
   top: 0;
   width: 250px;
   height: 100%;
-  background-color: #222222;
+  background-color: var(--background-color-dark);
   transition: width 0.3s;
 }
 
@@ -29,10 +41,10 @@ li {
   align-items: center;
   padding: 10px;
   text-decoration: none;
-  color: white;
+  color: var(--text-color-dark);
   white-space: nowrap;
   overflow: hidden;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, color 0.3s;
 }
 
 .navbar a span {
@@ -40,11 +52,11 @@ li {
 }
 
 a:hover {
-  color: #00BFFF;
+  color: var(--hover-color-dark);
 }
 
 .active a {
-  color: #009DCF;
+  color: var(--active-color-dark);
 }
 
 .navbar svg {
@@ -57,28 +69,49 @@ a:hover {
   left: 0;
   right: 0;
   text-align: center;
-  color: #FFF;
+  color: var(--text-color-dark);
   font-size: 12px; 
 }
 
 .logo-container {
   text-align: center;
-  padding: 30px 0;
+  padding: 5px 0;
 }
 
 .logo {
-  width: 200px;
-  height: auto;
+  width: 80%;
+  top: 1px;
+}
+
+@media (prefers-color-scheme: light) {
+  .navbar {
+    background-color: var(--background-color-light);
+  }
+
+  .navbar a {
+    color: var(--text-color-light);
+  }
+
+  .Footer {
+    color: var(--text-color-light);
+  }
+
+  a:hover {
+    color: var(--hover-color-light);
+  }
+
+  .active a {
+    color: var(--active-color-light);
+  }
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar {
-    position: fixed;
     width: 70px;
   }
 
- hr {
+  hr {
     width: 60%;
   }
 
@@ -92,11 +125,11 @@ a:hover {
   }
 
   .logo {
-    width: 60px;
+    width: 80px;
   }
 
   .logo-container {
-    object-fit:fill;
+    object-fit: fill;
     margin-bottom: 50px;
   }
 
@@ -105,7 +138,7 @@ a:hover {
   }
 
   .navbar a {
-    padding: 0px;
+    padding: 0;
   }
 
   li {

@@ -1,6 +1,6 @@
 /* Skills.css */
 .Skills {
-  color: #FFF;
+  color: var(--color-text);
   text-align: center;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .column h3 {
-  font-size: 1.8rem;
+  font-size: 29px;
   margin-bottom: 20px;
 }
 
@@ -71,11 +71,10 @@
 
 .skill-icon, .image-icon {
   font-size: 80px;
-  color: #009DCF;
+  color: var(--color-primary);
   padding: 20px;
   width: 80px;
 }
-
 
 @media (max-width: 1024px) {
   .skills-columns {

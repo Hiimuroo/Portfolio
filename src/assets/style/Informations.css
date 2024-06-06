@@ -1,5 +1,3 @@
-/* Informations.css */
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -43,15 +41,15 @@
 }
 
 .informations {
-  background-color: #151515;
-  color: #FFFFFF;
+  background-color: var(--color-background);
+  color: var(--color-text);
   width: calc(100% - 100px);
   box-sizing: border-box;
-  overflow: auto; 
+  overflow: auto;
 }
 
 .informations h2 {
-  color: #009DCF;
+  color: var(--color-primary);
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -77,7 +75,7 @@
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border: 5px solid #009DCF;
+  border: 5px solid var(--color-primary);
   animation: scaleUp 1s ease-in-out;
 }
 
@@ -92,7 +90,7 @@
 }
 
 .section h4 {
-  color: #FFFFFF;
+  color: var(--color-text);
   margin-bottom: 10px;
   text-align: center;
 }

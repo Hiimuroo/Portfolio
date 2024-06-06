@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faCircleInfo, faListCheck, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../assets/style/Navbar.css';
-import logo from '../assets/images/logo.png';
+import logoLight from '../assets/images/logo1.png';
+import logoDark from '../assets/images/logo2.png';
 
 const Navbar = () => {
+  const [theme, setTheme] = useState('light');
   const currentPath = window.location.pathname;
+
+  useEffect(() => {
+    const matchDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e) => setTheme(e.matches ? 'dark' : 'light');
+    matchDark.addListener(handleChange);
+    setTheme(matchDark.matches ? 'dark' : 'light');
+
+    return () => matchDark.removeListener(handleChange);
+  }, []);
+
+  const logo = theme === 'dark' ? logoDark : logoLight;
 
   return (
     <div className="navbar sidebar">
