@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className={`home ${loaded ? 'loaded' : ''}`} role="main" aria-labelledby="home-title">
+    <section className={`home ${loaded ? 'loaded' : ''}`} role="main">
       <h1 id="home-title">Matthieu Labille</h1>
       <h2>Intégrateur/Developpeur Web</h2>
       <div className="separator"></div>

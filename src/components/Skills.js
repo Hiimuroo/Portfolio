@@ -36,7 +36,7 @@ const Skills = () => {
   }, [loaded]);
 
   return (
-    <main className='Skills' role='main' aria-labelledby="skills-title">
+    <div className='Skills' role='main'>
       <h1>Mes Compétences</h1>
       <div className="separator"></div>
       <div className={`skills-container ${loaded ? 'loaded' : ''}`}>
@@ -81,7 +81,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 

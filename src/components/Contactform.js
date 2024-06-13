@@ -21,7 +21,7 @@ const ContactForm = () => {
   };
 
   return (
-    <main className="Contact" role='main' aria-labelledby="contact-title">
+    <div className="Contact" role='main'>
       <h1>Contactez-moi</h1>
       <div className="separator"></div>
       <p>
@@ -54,7 +54,7 @@ const ContactForm = () => {
         ></textarea>
         <button type="submit" className="submit-button">Envoyer</button>
       </form>
-    </main>
+    </div>
   );
 };
 

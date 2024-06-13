@@ -50,7 +50,7 @@ const Projets = () => {
   }, []);
 
   return (
-    <main className="projets" role='main' aria-labelledby="projets-title">
+    <div className="projets" role='main'>
       <h1 id="projets-title">Mes Projets</h1>
       <div className="separator"></div>
       <div className={`project-list ${loaded ? 'loaded' : ''}`}>
@@ -98,7 +98,7 @@ const Projets = () => {
           </div>
         </div>
       )}
-    </main>
+    </div>
   );
 }
 
