@@ -177,5 +177,10 @@
   .navbar li::after {
     width: 50%;
   }
+}
 
+@media (max-width: 480px) {
+  .Footer p {
+    font-size: 10px;
+  }
 }

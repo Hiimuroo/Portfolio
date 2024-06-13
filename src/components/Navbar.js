@@ -21,7 +21,7 @@ const Navbar = () => {
   const logo = theme === 'dark' ? logoDark : logoLight;
 
   return (
-    <main className="navbar sidebar">
+    <div className="navbar sidebar" role="navigation">
       <div className="logo-container">
         <img src={logo} alt="PortFolio Matthieu Labille - Développeur Intégrateur" className="logo" />
       </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
       <div className="Footer">
         <p>Copyright © {new Date().getFullYear()} Matthieu Labille</p>
       </div>
-    </main>
+    </div>
   );
 }
 

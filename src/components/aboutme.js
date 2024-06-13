@@ -1,5 +1,4 @@
 // Informations.js
-
 import React from 'react';
 import '../assets/style/Informations.css';
 import personalInfo from '../Data/aboutme.json';
@@ -8,7 +7,7 @@ const Informations = () => {
   const { introduction, diplomas, career, passions, photo } = personalInfo;
 
   return (
-    <main className="informations">
+    <main className="informations" role='main' aria-labelledby="about-title">
       <h1>A propos de moi</h1>
       <div className="separator"></div>
       <div className="intro-photo-section">

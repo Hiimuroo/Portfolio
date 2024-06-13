@@ -48,7 +48,7 @@
 }
 
 .social-links a {
-  color: var(--color-primary);
+  color: var(--color-border-focus);
   margin: 0 10px;
 }
 
@@ -57,7 +57,7 @@
   border: none;
   cursor: pointer; 
   font-size: 30px;
-  color: var(--color-primary);
+  color: var(--color-border-focus);
 }
 
 .social-links a:hover,

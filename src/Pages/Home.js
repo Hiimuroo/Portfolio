@@ -1,3 +1,4 @@
+//home.js
 import React, { useState, useEffect } from 'react';
 import '../assets/style/Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +13,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className={`home ${loaded ? 'loaded' : ''}`}aria-labelledby="home-title">
+    <section className={`home ${loaded ? 'loaded' : ''}`} role="main" aria-labelledby="home-title">
       <h1 id="home-title">Matthieu Labille</h1>
       <h2>Intégrateur/Developpeur Web</h2>
       <div className="separator"></div>

@@ -1,3 +1,4 @@
+//projet.css
 import React, { useState, useEffect, useRef } from 'react';
 import projetsData from '../Data/Projets.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -49,7 +50,7 @@ const Projets = () => {
   }, []);
 
   return (
-    <main className="projets" aria-labelledby="projets-title">
+    <main className="projets" role='main' aria-labelledby="projets-title">
       <h1 id="projets-title">Mes Projets</h1>
       <div className="separator"></div>
       <div className={`project-list ${loaded ? 'loaded' : ''}`}>

@@ -1,3 +1,4 @@
+//contact.js
 import React, { useState } from 'react';
 import '../assets/style/Contact.css';
 
@@ -20,7 +21,7 @@ const ContactForm = () => {
   };
 
   return (
-    <main className="Contact">
+    <main className="Contact" role='main' aria-labelledby="contact-title">
       <h1>Contactez-moi</h1>
       <div className="separator"></div>
       <p>

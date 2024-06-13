@@ -1,3 +1,4 @@
+//skills.js
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faSass, faJs, faReact, faNodeJs, faBootstrap, faPython } from '@fortawesome/free-brands-svg-icons';
@@ -35,7 +36,7 @@ const Skills = () => {
   }, [loaded]);
 
   return (
-    <main className='Skills'>
+    <main className='Skills' role='main' aria-labelledby="skills-title">
       <h1>Mes Compétences</h1>
       <div className="separator"></div>
       <div className={`skills-container ${loaded ? 'loaded' : ''}`}>

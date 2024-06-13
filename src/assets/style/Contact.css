@@ -44,7 +44,7 @@ textarea {
 }
 
 .submit-button {
-  background-color: var(--color-primary);
+  background-color: var(--color-border-focus);
   color: var(--color-text);
   padding: 15px 30px;
   border: none;
