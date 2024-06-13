@@ -35,9 +35,9 @@ const Skills = () => {
   }, [loaded]);
 
   return (
-    <div className='Skills'>
+    <main className='Skills'>
       <h1>Mes Compétences</h1>
-      <hr />
+      <div className="separator"></div>
       <div className={`skills-container ${loaded ? 'loaded' : ''}`}>
         <div className="skills-columns">
           <div className={`column ${showColumn1 ? 'show' : ''}`}>
@@ -80,7 +80,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

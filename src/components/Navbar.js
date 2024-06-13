@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faCircleInfo, faListCheck, faCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import '../assets/style/Navbar.css';
-import logoLight from '../assets/images/logo1.png';
-import logoDark from '../assets/images/logo2.png';
+import logoLight from '../assets/images/logo1.svg';
+import logoDark from '../assets/images/logo2.svg';
 
 const Navbar = () => {
   const [theme, setTheme] = useState('light');
@@ -21,36 +21,33 @@ const Navbar = () => {
   const logo = theme === 'dark' ? logoDark : logoLight;
 
   return (
-    <div className="navbar sidebar">
+    <main className="navbar sidebar">
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />
+        <img src={logo} alt="PortFolio Matthieu Labille - Développeur Intégrateur" className="logo" />
       </div>
+      <nav>
       <ul>
         <li className={currentPath === '/home' ? 'active' : ''}>
           <a href="/home"><FontAwesomeIcon icon={faHouse} /><span>Home</span></a>
         </li>
-        <hr />
         <li className={currentPath === '/informations' ? 'active' : ''}>
           <a href="/informations"><FontAwesomeIcon icon={faCircleInfo} /><span>Informations</span></a>
         </li>
-        <hr />
         <li className={currentPath === '/projets' ? 'active' : ''}>
           <a href="/projets"><FontAwesomeIcon icon={faCode} /><span>Mes projets</span></a>
         </li>
-        <hr />
         <li className={currentPath === '/competences' ? 'active' : ''}>
           <a href="/competences"><FontAwesomeIcon icon={faListCheck} /><span>Mes compétences</span></a>
         </li>
-        <hr />
         <li className={currentPath === '/contact' ? 'active' : ''}>
           <a href="/contact"><FontAwesomeIcon icon={faEnvelope} /><span>Me contacter</span></a>
         </li>
-        <hr />
       </ul>
+    </nav>
       <div className="Footer">
-        <h5>Copyright © {new Date().getFullYear()} Matthieu Labille</h5>
+        <p>Copyright © {new Date().getFullYear()} Matthieu Labille</p>
       </div>
-    </div>
+    </main>
   );
 }
 

@@ -45,7 +45,7 @@
   color: var(--color-text);
   width: calc(100% - 100px);
   box-sizing: border-box;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .informations h2 {

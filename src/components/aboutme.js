@@ -8,9 +8,9 @@ const Informations = () => {
   const { introduction, diplomas, career, passions, photo } = personalInfo;
 
   return (
-    <div className="informations">
+    <main className="informations">
       <h1>A propos de moi</h1>
-      <hr />
+      <div className="separator"></div>
       <div className="intro-photo-section">
         <div className="section photo">
           <img src={photo} alt="Matthieu Labille" />
@@ -46,7 +46,7 @@ const Informations = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </main>
   );
 }
 

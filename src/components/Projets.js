@@ -1,4 +1,3 @@
-// Projets.js
 import React, { useState, useEffect, useRef } from 'react';
 import projetsData from '../Data/Projets.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -35,18 +34,36 @@ const Projets = () => {
 
     document.addEventListener('mousedown', handleClickOutside);
 
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
     };
   }, []);
 
   return (
-    <div className="projets">
-      <h1>Mes Projets</h1>
-      <hr />
+    <main className="projets" aria-labelledby="projets-title">
+      <h1 id="projets-title">Mes Projets</h1>
+      <div className="separator"></div>
       <div className={`project-list ${loaded ? 'loaded' : ''}`}>
         {projetsData.map((project, index) => (
-          <div className="project-item" key={index} onClick={() => openModal(project)}>
+          <div
+            className="project-item"
+            key={index}
+            onClick={() => openModal(project)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') openModal(project);
+            }}
+            role="button"
+            tabIndex={0}
+          >
             <img src={project.image} alt={project.title} />
             <p>{project.title}</p>
           </div>
@@ -55,7 +72,7 @@ const Projets = () => {
       {selectedProject && (
         <div className="modal" ref={modalRef}>
           <div className="modal-content">
-            <span className="close" onClick={closeModal}>×</span>
+            <span className="close" onClick={closeModal} onKeyDown={(e) => { if (e.key === 'Enter') closeModal(); }}>×</span>
             <h1>{selectedProject.title}</h1>
             <h3>Objectifs</h3>
             <p>{selectedProject.objectives}</p>
@@ -80,7 +97,7 @@ const Projets = () => {
           </div>
         </div>
       )}
-    </div>
+    </main>
   );
 }
 

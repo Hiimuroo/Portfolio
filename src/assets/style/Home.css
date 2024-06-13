@@ -76,6 +76,7 @@ hr {
   font-size: 24px;
 }
 
+
 @keyframes slide-in {
   0% {
     transform: translateX(-50%);

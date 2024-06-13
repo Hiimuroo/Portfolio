@@ -7,12 +7,14 @@
   --color-primary-hover: #007BA7;
   --color-border: #009DCF;
   --color-border-focus: #0077B6;
+  --separator-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: #151515;
     --color-text: #fff;
+    --separator-color: #fff;
   }
 }
 
@@ -28,6 +30,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .sections {
@@ -39,8 +42,21 @@ h1 {
   margin-left: 250px;
 }
 
+.separator {
+  height: 2px;
+  margin: 20px auto;
+  width: 300px;
+  display: block;
+  background-color: var(--separator-color);
+}
+
 @media screen and (max-width: 768px) {
   .sections {
     margin-left: 80px;
+  }
+
+  .separator {
+    max-width: 300px;
+    width: 70%;
   }
 }
