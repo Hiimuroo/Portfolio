@@ -1,8 +1,8 @@
 import React from 'react';
-import Skills from '../components/Skills.js';
-import '../assets/style/Skills.css'
+import Skills from '../components/Skills';
+import '../assets/style/Skills.css';
 
-const skills  = () => {
+const SkillsPage = () => {
   return (
     <div className="sections">
       <Skills />
@@ -10,4 +10,4 @@ const skills  = () => {
   );
 };
 
-export default skills ;
+export default SkillsPage;

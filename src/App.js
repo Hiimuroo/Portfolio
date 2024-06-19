@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -6,12 +7,13 @@ import Informations from './Pages/Informations';
 import Competences from './Pages/Competences';
 import Projets from './Pages/Projets';
 import Contact from './Pages/Contact';
+import Player from './components/Player';
 
 const App = () => {
   return (
     <Router>
       <div className="app">
-        <header role='banner'>
+        <header role='main'>
           <Navbar />
         </header>
         <main>
@@ -24,9 +26,10 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+        <Player />
       </div>
     </Router>
   );
-}
+};
 
 export default App;

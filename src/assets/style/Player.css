@@ -1,0 +1,51 @@
+/* Player.css */
+.player-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: var(--color-primary-hover);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.player-controls {
+    display: flex;
+    align-items: center;
+}
+  
+.player-controls span {
+    color: #fff;
+    margin-right: 10px;
+}
+  
+.player-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+  
+.player-controls input[type="range"] {
+    width: 100px;
+}
+
+.autoplay-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.autoplay-toggle input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .player-container {
+      display: none;
+  }
+}
