@@ -1,3 +1,4 @@
+//Competences.js
 import React from 'react';
 import Skills from '../components/Skills';
 import '../assets/style/Skills.css';

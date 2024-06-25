@@ -1,36 +1,36 @@
-/* Player.css */
 .player-container {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    background: var(--color-primary-hover);
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: var(--color-primary-hover);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
 }
-  
+
 .player-controls {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-  
+
 .player-controls span {
-    color: #fff;
-    margin-right: 10px;
+  color: #fff;
+  margin-right: 10px;
 }
-  
+
 .player-controls button {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    margin-right: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
 }
-  
+
 .player-controls input[type="range"] {
-    width: 100px;
+  width: 100px;
 }
 
 .autoplay-toggle {
@@ -44,8 +44,64 @@
   margin-right: 10px;
 }
 
+.consent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.consent-container p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.consent-container div {
+  display: flex;
+  justify-content: center;
+}
+
+.consent-container button {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.consent-container .close-button {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.consent-container button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
 @media (max-width: 767px) {
-    .player-container {
-      display: none;
+  .player-container {
+    display: none;
   }
 }

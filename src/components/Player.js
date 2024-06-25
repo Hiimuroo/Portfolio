@@ -1,4 +1,4 @@
-// Player.js
+//Player.js
 import React, { useState, useRef, useEffect } from 'react';
 import '../assets/style/Player.css';
 import ReactPlayer from 'react-player/lazy';
@@ -7,6 +7,8 @@ const Player = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0.1);
   const [autoplay, setAutoplay] = useState(false);
+  const [consent, setConsent] = useState(null);
+  const [isClosed, setIsClosed] = useState(false);
   const audioUrl = 'https://www.youtube.com/watch?v=jfKfPfyJRdk';
 
   const audioRef = useRef(null);
@@ -16,6 +18,13 @@ const Player = () => {
     setAutoplay(savedAutoplay);
     if (savedAutoplay) {
       setIsPlaying(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const savedConsent = localStorage.getItem('consent');
+    if (savedConsent !== null) {
+      setConsent(savedConsent === 'true');
     }
   }, []);
 
@@ -48,41 +57,72 @@ const Player = () => {
     }
   };
 
+  const handleConsent = (response) => {
+    setConsent(response);
+    localStorage.setItem('consent', response);
+  };
+
+  const handleClosePlayer = () => {
+    setIsClosed(true);
+  };
+
+  if (isClosed) {
+    return null;
+  }
+
   return (
     <div className="player-container">
-      <div className="player-controls">
-        <span>Radio LoFi</span>
-        <button onClick={handlePlayPause}>
-          {isPlaying ? 'Pause' : 'Play'}
-        </button>
-        <input
-          type="range"
-          min="0"
-          max="1"
-          step="0.01"
-          value={volume}
-          onChange={handleVolumeChange}
-          aria-label="Volume"
-        />
-        <label className="autoplay-toggle">
+      {consent === null ? (
+        <div className="consent-container">
+          <p>Acceptez-vous l'envoi de données vers Google LLC pour utiliser le lecteur ?</p>
+          <div>
+            <button onClick={() => handleConsent(true)}>Oui</button>
+            <button onClick={() => handleConsent(false)}>Non</button>
+            <button className="close-button" onClick={handleClosePlayer}>✖</button>
+          </div>
+        </div>
+      ) : consent ? (
+        <div className="player-controls">
+          <span>Radio LoFi</span>
+          <button onClick={handlePlayPause}>
+            {isPlaying ? 'Pause' : 'Play'}
+          </button>
           <input
-            type="checkbox"
-            checked={autoplay}
-            onChange={handleAutoplayToggle}
+            type="range"
+            min="0"
+            max="2"
+            step="0.01"
+            value={volume}
+            onChange={handleVolumeChange}
+            aria-label="Volume"
           />
-          Autoplay
-        </label>
-      </div>
-      <ReactPlayer
-        ref={audioRef}
-        url={audioUrl}
-        playing={isPlaying}
-        volume={volume}
-        controls={false}
-        width="0"
-        height="0"
-        style={{ display: 'none' }}
-      />
+          <label className="autoplay-toggle">
+            <input
+              type="checkbox"
+              checked={autoplay}
+              onChange={handleAutoplayToggle}
+            />
+            Autoplay
+          </label>
+        </div>
+      ) : (
+        <div>
+          <button className="close-button" onClick={handleClosePlayer}>✖</button>
+          <p>Vous avez refusé le consentement pour utiliser le lecteur Radio.</p>
+        </div>
+      )}
+      {consent && (
+        <ReactPlayer
+          ref={audioRef}
+          url={audioUrl}
+          playing={isPlaying}
+          volume={volume}
+          controls={false}
+          width="0"
+          height="0"
+          style={{ display: 'none' }}
+        />
+      )}
     </div>
   );
 };

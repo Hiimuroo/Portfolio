@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -11,8 +10,9 @@ import Player from './components/Player';
 
 const App = () => {
   return (
-    <Router>
-      <div className="app">
+    <div className="app">
+      <Player />
+      <Router>
         <header role='main'>
           <Navbar />
         </header>
@@ -26,9 +26,8 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        <Player />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 };
 

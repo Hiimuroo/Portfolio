@@ -1,4 +1,4 @@
-//projet.css
+//projets.css
 import React, { useState, useEffect, useRef } from 'react';
 import projetsData from '../Data/Projets.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -1,10 +1,10 @@
-// Informations.js
+// aboutme.js
 import React from 'react';
 import '../assets/style/Informations.css';
 import personalInfo from '../Data/aboutme.json';
 
 const Informations = () => {
-  const { introduction, diplomas, career, passions, photo } = personalInfo;
+  const { introduction, Parcours, Jobs, passions, photo } = personalInfo;
 
   return (
     <div className="informations" role='main'>
@@ -22,16 +22,16 @@ const Informations = () => {
       <div className="section">
         <h2>Diplômes</h2>
         <ul>
-          {diplomas.map((diploma, index) => (
-            <li key={index}>{diploma}</li>
+          {Parcours.map((Parcour, index) => (
+            <li key={index}>{Parcour}</li>
           ))}
         </ul>
       </div>
       <div className="section">
         <h2>Parcours Professionnel</h2>
         <ul>
-          {career.map((job, index) => (
-            <li key={index}>{job}</li>
+          {Jobs.map((Job, index) => (
+            <li key={index}>{Job}</li>
           ))}
         </ul>
       </div>

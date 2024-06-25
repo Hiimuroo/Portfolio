@@ -1,4 +1,4 @@
-// pages/Projets.js
+//Projets.js
 import React from 'react';
 import Projets from '../components/Projets';
 

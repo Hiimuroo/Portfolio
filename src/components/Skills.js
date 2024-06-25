@@ -1,24 +1,22 @@
-// Skills.js
+//Skills.js
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faSass, faJs, faReact, faNodeJs, faBootstrap, faPython } from '@fortawesome/free-brands-svg-icons';
 import reduxLogo from '../assets/images/redux.svg';
-import JestLogo from '../assets/images/jest.png';
 import MongoLogo from '../assets/images/Mongo.png';
 import '../assets/style/Skills.css';
 
 const skillsData = [
-  { icon: faHtml5, name: 'HTML5', level: 90 },
-  { icon: faCss3Alt, name: 'CSS3', level: 90 },
-  { icon: faSass, name: 'Sass', level: 80 },
-  { icon: faJs, name: 'JavaScript', level: 80 },
-  { icon: faBootstrap, name: 'Bootstrap', level: 60 },
-  { icon: faReact, name: 'React', level: 80 },
-  { src: reduxLogo, name: 'Redux', level: 70 },
-  { icon: faNodeJs, name: 'Node.js', level: 60 },
-  { src: MongoLogo, name: 'MongoDB', level: 50 },
-  { src: JestLogo, name: 'Jest', level: 50 },
-  { icon: faPython, name: 'Python', level: 30 },
+  { icon: faHtml5, name: 'HTML5' },
+  { icon: faCss3Alt, name: 'CSS3' },
+  { icon: faSass, name: 'Sass' },
+  { icon: faJs, name: 'JavaScript' },
+  { icon: faBootstrap, name: 'Bootstrap' },
+  { icon: faReact, name: 'React' },
+  { src: reduxLogo, name: 'Redux' },
+  { icon: faNodeJs, name: 'Node.js' },
+  { src: MongoLogo, name: 'MongoDB' },
+  { icon: faPython, name: 'Python' },
 ];
 
 const Skills = () => {
@@ -58,7 +56,7 @@ const Skills = () => {
           <div className={`column ${showColumn1 ? 'show' : ''}`}>
             <h3>FRONT-END</h3>
             <div className="icons">
-              {skillsData.slice(0, 6).map((skill, index) => (
+              {skillsData.slice(0, 7).map((skill, index) => (
                 <div className="skill" key={index}>
                   {skill.icon ? (
                     <FontAwesomeIcon icon={skill.icon} className="skill-icon" />
@@ -66,9 +64,6 @@ const Skills = () => {
                     <img src={skill.src} alt={skill.name} className="image-icon" />
                   )}
                   <span>{skill.name}</span>
-                  <div className="progression-bar">
-                    <div className="progression" style={{ width: `${skill.level}%` }}></div>
-                  </div>
                 </div>
               ))}
             </div>
@@ -76,7 +71,7 @@ const Skills = () => {
           <div className={`column ${showColumn2 ? 'show' : ''}`}>
             <h3>BACK-END</h3>
             <div className="icons">
-              {skillsData.slice(6).map((skill, index) => (
+              {skillsData.slice(7).map((skill, index) => (
                 <div className="skill" key={index}>
                   {skill.icon ? (
                     <FontAwesomeIcon icon={skill.icon} className="skill-icon" />
@@ -84,9 +79,6 @@ const Skills = () => {
                     <img src={skill.src} alt={skill.name} className="image-icon" />
                   )}
                   <span>{skill.name}</span>
-                  <div className="progression-bar">
-                    <div className="progression" style={{ width: `${skill.level}%` }}></div>
-                  </div>
                 </div>
               ))}
             </div>
