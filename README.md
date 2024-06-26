@@ -1,10 +1,5 @@
 # Matthieu Labille - Portfolio
 
-## Aperçu
-
-![Aperçu du Portfolio](src/assets/images/port1.png)
-![Aperçu du Portfolio](src/assets/images/port2.png)
-
 ## Fonctionnalités
 
 - **Accueil** : Introduction avec une animation attrayante et des liens vers mes réseaux sociaux.
@@ -19,3 +14,8 @@
 - **CSS** : Feuilles de style pour la mise en page et les animations.
 - **FontAwesome** : Icônes pour les réseaux sociaux et les compétences.
 - **JSON** : Pour stocker et gérer les données des projets.
+
+## Aperçu
+
+![Aperçu du Portfolio](src/assets/images/port3.wepb)
+![Aperçu du Portfolio](src/assets/images/port4.wepb)
