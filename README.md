@@ -17,5 +17,5 @@
 
 ## Aperçu
 
-![Aperçu du Portfolio](src/assets/images/port3.wepb)
-![Aperçu du Portfolio](src/assets/images/port4.wepb)
+![Aperçu du Portfolio](src/assets/images/port3.png)
+![Aperçu du Portfolio](src/assets/images/port4.png)
